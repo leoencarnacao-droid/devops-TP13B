@@ -5,7 +5,6 @@ env:
         - "http://localhost:8080"
       includePaths:
         - "http://localhost:8080/.*"
-
   parameters:
     failOnError: true
     failOnWarning: false
@@ -34,4 +33,5 @@ jobs:
       template: modern
       reportDir: /zap/wrk/reports
       reportFile: zap-report
-      reportTitle: "Notes App - Security Scan Report"
+      reportTitle: "Notes App - Security Scan  Report"
+ 
