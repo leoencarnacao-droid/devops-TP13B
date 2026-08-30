@@ -55,7 +55,10 @@ def test_create_and_delete(conn, client):
 
 
 def test_create_rejects_missing_title(client):
-    assert client.post(
-        "/api/notes",
-        json={},
-    ).status_code == 400 
+    assert (
+        client.post(
+            "/api/notes",
+            json={},
+        ).status_code
+        == 400
+    )
